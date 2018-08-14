@@ -13,21 +13,28 @@
     "index.js"
   ],
   "repository": "mdotasia/eslint-config",
+  "lint-staged": {
+    "*.js": "eslint"
+  },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "precommit": "lint-staged && pretty-quick --staged"
   },
   "dependencies": {
     "eslint-config-airbnb": "^17.0.0",
-    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.3.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "prettier": "^1.14.2"
+    "eslint": "^5.3.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
   }
 }
