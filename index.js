@@ -13,7 +13,12 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error",
       {
-        devDependencies: ["**/*.test.js", "**/*.stories.jsx", "config/**/*.js"]
+        devDependencies: [
+          "**/*.test.js",
+          "**/*.stories.jsx",
+          "config/**/*.js",
+          "test/**/*.js"
+        ]
       }
     ],
     "react/jsx-one-expression-per-line": "off"
