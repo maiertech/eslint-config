@@ -1,7 +1,9 @@
 module.exports = {
   extends: ["airbnb", "prettier", "prettier/react"],
   env: {
-    jest: true
+    browser: true,
+    jest: true,
+    node: true
   },
   rules: {
     "no-unused-expressions": [
