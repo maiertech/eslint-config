@@ -1,8 +1,8 @@
 {
-  "name": "@mdotasia/eslint-config",
-  "version": "0.7.0",
+  "name": "@maiertech/eslint-config",
+  "version": "0.8.0",
   "author": "Thilo Maier <git@maier.asia>",
-  "description": "Sharable ESLint config for @mdotasia projects.",
+  "description": "Sharable ESLint config for @maiertech projects.",
   "keywords": [
     "eslint",
     "eslintconfig"
@@ -12,7 +12,7 @@
   "files": [
     "index.js"
   ],
-  "repository": "github:mdotasia/eslint-config",
+  "repository": "github:maiertech/eslint-config",
   "lint-staged": {
     "*.js": [
       "pretty-quick --staged",
