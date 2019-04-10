@@ -12,34 +12,45 @@
   "files": [
     "index.js"
   ],
-  "repository": "mdotasia/eslint-config",
+  "repository": "github:mdotasia/eslint-config",
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": [
+      "pretty-quick --staged",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged"
+      "pre-commit": "lint-staged"
     }
   },
   "scripts": {
-    "lint": "eslint .",
-    "upgrade-interactive": "npm-check --update"
-  },
-  "dependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.11.1"
+    "lint": "eslint . --ignore-path .gitignore",
+    "fix": "eslint . --ignore-path .gitignore --fix",
+    "format": "pretty-quick"
   },
   "peerDependencies": {
-    "eslint": "^5.15.1"
+    "babel-eslint": "9.x",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x"
   },
   "devDependencies": {
-    "eslint": "^5.15.1",
+    "babel-eslint": "9.x",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
     "husky": "^1.1.0",
     "lint-staged": "^8.1.5",
-    "npm-check": "^5.9.0",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.6.0"
   }
