@@ -41,6 +41,7 @@
     "eslint-plugin-react": "7.x"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.6.5",
     "babel-eslint": "9.x",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
