@@ -28,7 +28,8 @@
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
     "fix": "eslint . --ignore-path .gitignore --fix",
-    "format": "pretty-quick"
+    "format": "pretty-quick",
+    "purge": "rm -rf ./node_modules"
   },
   "peerDependencies": {
     "babel-eslint": "9.x",
@@ -52,6 +53,8 @@
     "eslint-plugin-react": "7.x",
     "husky": "^1.1.0",
     "lint-staged": "^8.1.5",
+    "node": "12.16.2",
+    "npm-check": "^5.9.2",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.6.0"
   }
