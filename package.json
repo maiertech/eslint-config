@@ -13,23 +13,21 @@
     "index.js"
   ],
   "repository": "github:maiertech/eslint-config",
-  "lint-staged": {
-    "*.js": [
-      "pretty-quick --staged",
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
   "scripts": {
-    "lint": "eslint . --ignore-path .gitignore",
-    "fix": "eslint . --ignore-path .gitignore --fix",
-    "format": "pretty-quick",
-    "purge": "rm -rf ./node_modules"
+    "lint": "npm run lint:code && npm run lint:other",
+    "lint:code": "eslint . --ignore-path .gitignore",
+    "lint:other": "npm run prettier -- --check",
+    "prettier": "prettier \"**/*.md\" --ignore-path .gitignore",
+    "format": "npm run format:code && npm run format:other",
+    "format:code": "npm run lint:code -- --fix",
+    "format:other": "npm run prettier -- --write",
+    "purge": "rm -rf ./node_modules",
+    "test": "npm run lint"
   },
   "peerDependencies": {
     "babel-eslint": "9.x",
@@ -51,11 +49,10 @@
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.19.0",
-    "husky": "1.3.1",
-    "lint-staged": "8.2.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
     "node": "12.16.2",
     "npm-check": "5.9.2",
-    "prettier": "1.19.1",
-    "pretty-quick": "1.11.1"
+    "prettier": "^2.0.5"
   }
 }
