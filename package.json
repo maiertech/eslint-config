@@ -13,10 +13,8 @@
     "index.js"
   ],
   "repository": "github:maiertech/eslint-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "engines": {
+    "node": ">=10.20.1"
   },
   "scripts": {
     "lint": "npm run lint:code && npm run lint:other",
@@ -27,6 +25,11 @@
     "format:code": "npm run lint:code -- --fix",
     "format:other": "npm run prettier -- --write",
     "purge": "rm -rf ./node_modules"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "peerDependencies": {
     "babel-eslint": "9.x",
