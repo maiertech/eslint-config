@@ -26,8 +26,7 @@
     "format": "npm run format:code && npm run format:other",
     "format:code": "npm run lint:code -- --fix",
     "format:other": "npm run prettier -- --write",
-    "purge": "rm -rf ./node_modules",
-    "test": "npm run lint"
+    "purge": "rm -rf ./node_modules"
   },
   "peerDependencies": {
     "babel-eslint": "9.x",

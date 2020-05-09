@@ -1,8 +1,9 @@
-name: Test code
-on: [push]
+name: Code QA
+
+on: pull_request
+
 jobs:
-  test:
-    name: npm test
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -10,4 +11,4 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm i
-      - run: npm test
+      - run: npm run lint
