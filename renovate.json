@@ -1,8 +1,6 @@
 {
-  "extends": ["config:base"],
-  "automerge": false,
+  "extends": ["config:base", "schedule:weekly"],
   "labels": ["dependencies"],
   "reviewers": ["454de6e"],
-  "semanticCommits": false,
-  "schedule": "monthly"
+  "semanticCommits": false
 }
