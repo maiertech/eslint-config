@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   extends: [
     'plugin:@shopify/esnext',
     'plugin:@shopify/react',
@@ -11,3 +11,5 @@ module.exports = {
     '@shopify/jsx-no-hardcoded-content': 'off',
   },
 };
+
+export default config;
