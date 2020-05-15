@@ -21,6 +21,8 @@
   "scripts": {
     "prepare": "microbundle --format modern,cjs",
     "watch": "microbundle watch --format modern,cjs --compress false",
+    "version": "changeset version",
+    "release": "changeset publish",
     "lint": "npm run lint:code && npm run lint:other",
     "lint:code": "eslint . --ignore-path .gitignore",
     "lint:other": "npm run prettier -- --check",

@@ -1,0 +1,27 @@
+name: Bump version or publish package to NPM
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # Fetch entire Git history so Changesets can generate changelogs.
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm i
+      - uses: changesets/action@master
+        with:
+          publish: npm run release
+          commit: Bump version
+          title: Publish package to NPM
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
