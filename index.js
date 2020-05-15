@@ -1,8 +1,13 @@
 module.exports = {
-  extends: ['react-app', 'prettier', 'prettier/react'],
-  env: {
-    browser: true,
-    jest: true,
-    node: true,
+  extends: [
+    'plugin:@shopify/esnext',
+    'plugin:@shopify/react',
+    'plugin:@shopify/node',
+    'plugin:@shopify/prettier',
+  ],
+  rules: {
+    'id-length': 'off',
+    'babel/object-curly-spacing': ['error', 'always'],
+    '@shopify/jsx-no-hardcoded-content': 'off',
   },
 };

@@ -4,24 +4,23 @@ This package provides an ESLint config for
 [@maiertech](https://github.com/maiertech) projects as an extensible
 [shared config](https://eslint.org/docs/developer-guide/shareable-configs). Run
 
-```bash
-yarn add --dev @maiertech/eslint-config
-```
+    npm i -D @maiertech/eslint-config
 
-to install. You need to manually install all `peerDependencies` as
-`devDependencies` in your project. Then create `.eslintrc` and add
+to install. You need to manually install peer dependencies `eslint@6` and
+`prettier@2` by running
 
-```bash
-{
-  "extends": "@maiertech"
-}
-```
+    npm i -D eslint@6 prettier@2
 
-This config is based on
-[`eslint-config-react-app`](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app),
-which is a rather unopinionated config. For instance, `eslint-config-react-app`
-does not mandate using semicolons or not and generally leaves the formatting up
-to the user. The idea is that you delgate formatting to
-[`Prettier`](https://prettier.io/) and let [ESLint](https://eslint.org/) take
-care of everything else. To make sure that ESLint and Prettier can coexist,
-`@maiertech/eslint-config` turns off any rules that interfere with Prettier.
+Then create `.eslintrc` in your project root with
+
+    {
+      "extends": "@maiertech"
+    }
+
+This ESLint config is based on
+[`@shopify/eslint-plugin`](https://github.com/Shopify/web-foundation/tree/master/packages/eslint-plugin),
+which is a somewhat opinionated config.
+
+Any formatting rules are delegated to [`Prettier`](https://prettier.io/) and you
+can optionally add a `.prettierrc` to your project and customize your
+[Prettier configuration](https://prettier.io/docs/en/configuration.html).
