@@ -1,4 +1,4 @@
-name: Bump version or publish package to NPM
+name: Release
 
 on:
   push:
@@ -23,5 +23,8 @@ jobs:
           commit: Bump version
           title: Publish package to NPM
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # secrets.GITHUB_TOKEN cannot trigger workflows.
+          # secrets.GH_TOKEN is a personal access token with public_repo permission.
+          # Personal access tokens can trigger workflows.
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
