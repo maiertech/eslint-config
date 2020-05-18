@@ -22,6 +22,7 @@ jobs:
       - run: npm i
       - uses: changesets/action@master
         with:
+          version: npm run version
           publish: npm run release
           commit: Bump version
           title: Publish package to NPM
