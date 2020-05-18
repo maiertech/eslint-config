@@ -24,7 +24,7 @@ jobs:
         with:
           version: npm run version
           publish: npm run release
-          commit: Bump version
+          commit: Publish package
           title: Publish package to NPM
         env:
           # Use personal access token GH_TOKEN to trigger workflows with changesets/action.
