@@ -30,7 +30,8 @@
     "format": "npm run format:code && npm run format:other",
     "format:code": "npm run lint:code -- --fix",
     "format:other": "npm run prettier -- --write",
-    "purge": "rm -rf ./node_modules"
+    "purge": "rm -rf ./node_modules",
+    "upgrade-interactive": "npx npm-check -u"
   },
   "husky": {
     "hooks": {
@@ -48,7 +49,7 @@
     "@changesets/cli": "2.7.1",
     "eslint": "6.8.0",
     "husky": "4.2.5",
-    "lint-staged": "10.2.2",
+    "lint-staged": "^10.2.3",
     "microbundle": "0.12.0",
     "npm-check": "5.9.2",
     "prettier": "2.0.5"
