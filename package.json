@@ -1,6 +1,6 @@
 {
   "name": "@maiertech/eslint-config",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "author": "Thilo Maier <git@maier.asia>",
   "description": "Sharable ESLint config for @maiertech projects.",
   "repository": "github:maiertech/eslint-config",
