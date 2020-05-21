@@ -1,4 +1,4 @@
-# @maiertech/eslint-config [![NPM version](https://img.shields.io/npm/v/@undataforum/eslint-config.svg)](https://www.npmjs.com/package/@undataforum/eslint-config)
+# @maiertech/eslint-config [![NPM version](https://img.shields.io/npm/v/@maiertech/eslint-config.svg)](https://www.npmjs.com/package/@maiertech/eslint-config)
 
 This package provides an ESLint config for
 [@maiertech](https://github.com/maiertech) projects as an extensible
