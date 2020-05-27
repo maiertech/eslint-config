@@ -25,7 +25,7 @@ jobs:
           version: npm run version
           publish: npm run release
           commit: Publish package
-          title: Publish package to NPM
+          title: Publish package
         env:
           # Use personal access token GH_TOKEN to trigger workflows with changesets/action.
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
