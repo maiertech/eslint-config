@@ -7,8 +7,9 @@ const config = {
   ],
   rules: {
     'id-length': 'off',
-    'babel/object-curly-spacing': ['error', 'always'],
     '@shopify/jsx-no-hardcoded-content': 'off',
+    'babel/object-curly-spacing': ['error', 'always'],
+    'react/jsx-pascal-case': 'off',
   },
 };
 
