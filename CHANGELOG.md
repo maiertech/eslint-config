@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 0.11.0
+
+### Minor Changes
+
+- 7d0ac9b: Turn off react/jsx-pascal-case
+
 ## 0.10.0
 
 ### Minor Changes
