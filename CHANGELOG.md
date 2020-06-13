@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 0.12.0
+
+### Minor Changes
+
+- f143bd2: Set minimum required Node version to 10.20.0
+
 ## 0.11.0
 
 ### Minor Changes
