@@ -1,6 +1,0 @@
-{
-  "extends": ["config:base", "schedule:monthly"],
-  "labels": ["dependencies"],
-  "reviewers": ["454de6e"],
-  "semanticCommits": false
-}
