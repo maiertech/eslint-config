@@ -1,5 +1,12 @@
 # @maiertech/eslint-config
 
+## 0.12.1
+
+### Patch Changes
+
+- f274eb2: Release with updated Microbundle
+- 36e5e85: Upgrade @shopify/eslint-plugin to 37.0.1
+
 ## 0.12.0
 
 ### Minor Changes
