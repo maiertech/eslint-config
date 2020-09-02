@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 0.13.0
+
+### Minor Changes
+
+- aebfd3f: Upgrade @shopify/eslint-plugin to v38.0.0
+
 ## 0.12.1
 
 ### Patch Changes
