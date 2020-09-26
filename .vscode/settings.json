@@ -1,9 +1,13 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "telemetry.enableCrashReporter": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
   "telemetry.enableTelemetry": false
 }
