@@ -31,3 +31,14 @@ When using this ESLint config, it is recommended you
 and create a
 [`lint-staged.config.js`](https://github.com/maiertech/eslint-config/blob/master/lint-staged.config.js)
 for [`lint-staged`](https://github.com/okonet/lint-staged).
+
+## Jest support
+
+This config currently does not support [Jest](https://jestjs.io/) due to an
+issue outlined in https://github.com/maiertech/eslint-config/issues/110. If you
+have installed package `jest` in your project, you can manually modify your
+`.eslintrc` configuration for full Jest support:
+
+    {
+      "extends": ["@maiertech", "@shopify/jest"],
+    }
