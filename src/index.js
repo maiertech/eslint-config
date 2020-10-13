@@ -3,6 +3,7 @@ const config = {
     'plugin:@shopify/esnext',
     'plugin:@shopify/react',
     'plugin:@shopify/node',
+    'plugin:@shopify/jest',
     'plugin:@shopify/prettier',
   ],
   rules: {
