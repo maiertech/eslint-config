@@ -1,5 +1,16 @@
 # @maiertech/eslint-config
 
+## 0.14.0
+
+### Minor Changes
+
+- 15604e1: Upgrade @shopify/eslint-plugin to v39.0.0
+
+### Patch Changes
+
+- fad47f2: Rebuild package with microbundle 0.12.4
+- 88bb350: Bump @shopify/eslint-config to 39.0.1
+
 ## 0.13.0
 
 ### Minor Changes
