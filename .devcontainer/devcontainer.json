@@ -1,12 +1,6 @@
 {
   "name": "node-npm",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "VARIANT": "12"
-    }
-  },
-  // Container specific settings only.
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:14",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
