@@ -1,5 +1,12 @@
 # @maiertech/eslint-config
 
+## 0.15.0
+
+### Minor Changes
+
+- c23e634: Set `node/no-extraneous-require` to `error`
+- ad3d2de: Drop support for Node v10
+
 ## 0.14.0
 
 ### Minor Changes
