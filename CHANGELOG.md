@@ -1,5 +1,12 @@
 # @maiertech/eslint-config
 
+## 0.16.0
+
+### Minor Changes
+
+- ca0b581: Upgrade @shopify/esint-plugin to v39.03 and eslint peer dependency to
+  v7.14.0
+
 ## 0.15.0
 
 ### Minor Changes
