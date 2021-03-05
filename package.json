@@ -26,6 +26,8 @@
   },
   "scripts": {
     "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
     "prepare": "microbundle --format cjs,modern",
     "watch": "microbundle watch --format cjs,modern --compress false",
     "version": "changeset version && npm run format",
@@ -65,6 +67,7 @@
     "microbundle": "^0.13.0",
     "micromatch": "^4.0.2",
     "npm-check": "^5.9.2",
+    "pinst": "^2.1.6",
     "prettier": "^2.2.1"
   }
 }
