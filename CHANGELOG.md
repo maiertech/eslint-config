@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 0.17.1
+
+### Patch Changes
+
+- f59c604: Fix postinstall error
+
 ## 0.17.0
 
 ### Minor Changes
