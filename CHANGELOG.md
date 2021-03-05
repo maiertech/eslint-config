@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 0.17.0
+
+### Minor Changes
+
+- cad499e: Use eslint-config-react-app
+
 ## 0.16.1
 
 ### Patch Changes
