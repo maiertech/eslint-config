@@ -6,39 +6,23 @@ This package provides an ESLint config for
 [@maiertech](https://github.com/maiertech) projects as an extensible
 [shared config](https://eslint.org/docs/developer-guide/shareable-configs). Run
 
-    npm i -D @maiertech/eslint-config
+    npm i -D eslint@^7.21.0 @maiertech/eslint-config
 
-to install. You need to manually install peer dependencies `eslint@^6` and
-`prettier@^2` by running
-
-    npm i -D eslint@^6 prettier@^2
-
-Then create `.eslintrc` in your project root with
+to install. Then create `.eslintrc.json` in your project root with
 
     {
       "extends": "@maiertech"
     }
 
 This ESLint config is based on
-[`@shopify/eslint-plugin`](https://github.com/Shopify/web-foundation/tree/master/packages/eslint-plugin).
-Any formatting rules are delegated to [`Prettier`](https://prettier.io/) and you
-can optionally add a `.prettierrc` to your project and customize your
-[Prettier configuration](https://prettier.io/docs/en/configuration.html).
+[eslint-config-react-app](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app):
 
-When using this ESLint config, it is recommended you
-[add lint and format scripts to your `package.json`](https://github.com/maiertech/eslint-config/blob/master/package.json#L26-L32),
-[configure `husky`](https://github.com/maiertech/eslint-config/blob/master/package.json#L26-L32)
-and create a
-[`lint-staged.config.js`](https://github.com/maiertech/eslint-config/blob/master/lint-staged.config.js)
-for [`lint-staged`](https://github.com/okonet/lint-staged).
-
-## Jest support
-
-This config currently does not support [Jest](https://jestjs.io/) due to an
-issue outlined in https://github.com/maiertech/eslint-config/issues/110. If you
-have installed package `jest` in your project, you can manually modify your
-`.eslintrc` configuration for full Jest support:
-
-    {
-      "extends": ["@maiertech", "@shopify/jest"],
-    }
+- It comes with
+  [these accessibility checks enabled](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app#accessibility-checks).
+- It comes with [Jest](https://jestjs.io/) support.
+- It does not contain any formatting rules. Check
+  [here](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically)
+  for the recommended setup to use [Prettier](https://prettier.io/) for
+  formatting. You can use
+  [@maiertech/prettier-config](https://github.com/maiertech/prettier-config) as
+  your Prettier config.
