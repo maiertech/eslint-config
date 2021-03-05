@@ -25,6 +25,7 @@
     "access": "public"
   },
   "scripts": {
+    "postinstall": "husky install",
     "prepare": "microbundle --format cjs,modern",
     "watch": "microbundle watch --format cjs,modern --compress false",
     "version": "changeset version && npm run format",
@@ -59,8 +60,8 @@
     "@changesets/cli": "^2.14.1",
     "@maiertech/prettier-config": "^0.3.0",
     "eslint": "^7.21.0",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
     "microbundle": "^0.13.0",
     "micromatch": "^4.0.2",
     "npm-check": "^5.9.2",
