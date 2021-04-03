@@ -6,7 +6,7 @@ This package provides an ESLint config for
 [@maiertech](https://github.com/maiertech) projects as an extensible
 [shared config](https://eslint.org/docs/developer-guide/shareable-configs). Run
 
-    npm i -D eslint@^7.21.0 @maiertech/eslint-config
+    npm i -D eslint @maiertech/eslint-config
 
 to install. Then create `.eslintrc.json` in your project root with
 
