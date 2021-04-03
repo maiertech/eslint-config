@@ -1,5 +1,12 @@
 # @maiertech/eslint-config
 
+## 0.17.2
+
+### Patch Changes
+
+- a150e42: Remove pinst from devDependencies and remove related tasks
+- 73a6e31: Upgrade dependencies
+
 ## 0.17.1
 
 ### Patch Changes
