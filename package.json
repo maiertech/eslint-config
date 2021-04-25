@@ -5,65 +5,52 @@
   "description": "Sharable config for ESLint.",
   "repository": "github:maiertech/eslint-config",
   "license": "MIT",
-  "source": "./src/index.js",
-  "main": "./dist/index.js",
-  "module": "./dist/index.modern.js",
-  "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.modern.js"
-  },
+  "type": "module",
+  "exports": "./index.js",
   "files": [
-    "dist"
-  ],
-  "keywords": [
-    "eslint"
+    "index.js"
   ],
   "engines": {
     "node": ">=12"
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "keywords": [
+    "eslint"
+  ],
   "scripts": {
-    "prepare": "husky install && microbundle --format cjs,modern",
-    "watch": "microbundle watch --format cjs,modern --compress false",
+    "prepare": "husky install",
     "version": "changeset version && npm run format",
     "release": "changeset publish",
-    "prettier": "prettier . --ignore-path .gitignore",
-    "lint": "npm run lint:eslint && npm run lint:prettier",
-    "lint:eslint": "eslint . --ignore-path .gitignore",
-    "lint:prettier": "npm run prettier -- --check",
-    "format": "npm run format:eslint && npm run format:prettier",
-    "format:eslint": "npm run lint:eslint -- --fix",
-    "format:prettier": "npm run prettier -- --write",
-    "purge": "rm -rf ./node_modules",
-    "upgrade-interactive": "npx npm-check -u"
+    "format": "prettier . --ignore-path .gitignore --write",
+    "test": "prettier . --ignore-path .gitignore --check",
+    "purge": "rm -rf ./node_modules"
   },
   "peerDependencies": {
-    "eslint": "^7.21.0"
+    "eslint": "^7.25.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.20.0",
-    "@typescript-eslint/parser": "^4.20.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "babel-eslint": "^10.1.0",
     "eslint-config-react-app": "^6.0.0",
-    "eslint-plugin-flowtype": "^5.4.0",
+    "eslint-plugin-flowtype": "^5.7.2",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.5",
+    "eslint-plugin-jest": "^24.3.5",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.14.1",
+    "@changesets/cli": "^2.16.0",
     "@maiertech/prettier-config": "^0.3.1",
-    "eslint": "^7.23.0",
+    "eslint": "7.25.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
-    "microbundle": "^0.13.0",
-    "micromatch": "^4.0.2",
     "npm-check": "^5.9.2",
     "prettier": "^2.2.1"
-  }
+  },
+  "lint-staged": {
+    "**/*.{js,json,md,yml}": "prettier --write"
+  },
+  "prettier": "@maiertech/prettier-config"
 }
