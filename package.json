@@ -16,6 +16,9 @@
   "keywords": [
     "eslint"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepare": "husky install",
     "version": "changeset version && npm run format",
