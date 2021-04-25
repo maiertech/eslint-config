@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 1.0.1
+
+### Patch Changes
+
+- cb09b08: Force re-release after failed release for version 1.0
+
 ## 1.0.0
 
 ### Major Changes
