@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 1.0.0
+
+### Major Changes
+
+- d044065: Convert to ESM only package
+
 ## 0.17.2
 
 ### Patch Changes
