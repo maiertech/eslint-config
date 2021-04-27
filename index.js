@@ -1,5 +1,3 @@
-const config = {
+module.exports = {
   extends: ['react-app', 'react-app/jest'],
 };
-
-export default config;
