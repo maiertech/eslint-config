@@ -1,14 +1,26 @@
 name: Test
-
-on: pull_request
-
+on: [pull_request]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    name: Run tests with Node ${{ matrix.node }} on ${{ matrix.os }}
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node: [12, 14]
+        os: [ubuntu-latest]
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.5
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Use Node ${{ matrix.node }}
+        uses: actions/setup-node@v2.1.5
         with:
-          node-version: '14'
-      - run: npm ci
-      - run: npm run test
+          node-version: ${{ matrix.node }}
+
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
+
+      - name: Test
+        run: npm run test
