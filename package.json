@@ -20,7 +20,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "version": "changeset version && npm run format",
+    "version": "changeset version",
     "release": "changeset publish",
     "test": "npm run test:eslint && npm run test:prettier",
     "test:eslint": "eslint . --ignore-path .gitignore",
