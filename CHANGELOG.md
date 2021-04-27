@@ -1,5 +1,15 @@
 # @maiertech/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- a87b9bd: Restore CJS entry point and drop support for ESM
+
+### Minor Changes
+
+- a87b9bd: Re-add CJS entry point
+
 ## 1.0.1
 
 ### Patch Changes
