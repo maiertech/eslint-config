@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- a51af01: Upgrade dependencies
+
 ## 2.0.0
 
 ### Major Changes
