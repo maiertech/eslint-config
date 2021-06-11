@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 2.0.2
+
+### Patch Changes
+
+- ba271a6: Upgrade dependencies
+
 ## 2.0.1
 
 ### Patch Changes
