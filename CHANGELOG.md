@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 2.0.3
+
+### Patch Changes
+
+- 77a28df: Bump eslint-plugin-import to ^2.23.4
+
 ## 2.0.2
 
 ### Patch Changes
