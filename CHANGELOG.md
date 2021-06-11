@@ -1,5 +1,11 @@
 # @maiertech/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- 6b77684: Add import/order rule to impose sort order on imports
+
 ## 2.0.3
 
 ### Patch Changes
