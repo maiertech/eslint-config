@@ -1,3 +1,6 @@
+This package is deprecated. Frameworks like [Next.js](https://nextjs.org/) and
+[SvelteKit](https://kit.svelte.dev/) come with an ESLint config.
+
 # @maiertech/eslint-config
 
 [![NPM version](https://img.shields.io/npm/v/@maiertech/eslint-config.svg)](https://www.npmjs.com/package/@maiertech/eslint-config)
